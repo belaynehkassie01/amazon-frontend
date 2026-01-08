@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.fixed{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header_container{
+    background-color: #1a1a1a;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    height: 90px;
+    
+    /* padding-bottom: 10px; */
+    /* padding-right: 10px; */
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
+.logo_container img{
+    width: 80%;
+    padding-top: 5px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+.delivery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+.delivery p{
+    font-size: 13px;
+    margin-bottom: 2pxpx;
+}
+.delivery span{
+   /* font-size: 15px; */
+   font-weight: bold;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 10%;
+    flex: 1;
+    background-color: #fff;
+    /* margin-right: 30px; */
+}
+.search select,.search input{
+    padding: 20px;
+    font-weight: bold;
+    outline: 1px solid white;
+}
+.search select{
+    border: none;
+}
+.search input{
+    border: 1px solid white;
+    width: 85%;
+    /* background-color: #f90404; */
+    /* margin-right: -2px; */
+}
+.search svg{
+    padding: 15px;
+    background: #febd69;
+    color: #1a1a1a;
+    cursor: pointer;
+    height: 100%;
+    width: 58px;
+   
+}
+.search svg:hover{
+    background-color: #d49644;
+}
+.search:focus-within{
+    border: 2px solid rgb(235, 161, 173);
+}
+.order_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 450px;
+    gap: 10px;
+    padding-left: 20px;
+    /* background-color: #fff; */
+
+}
+.order_container a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.order_container p{
+    font-size: 10px;
+}
+.language{
+    width: 100%;
+    display: flex;
+    /* padding: 30px; */
+    margin-right: 60px;
+    /* background-color: #33f30c; */
+}
+.language select{
+    background-color: #1a1a1a;
+    border: none;
+    color: white;
+}
+.language img{
+    width: 50%;
+}
+.sign span {
+   font-size: 17px;
+   font-weight: bold;
+   font-style: italic;
+
+}
+.sign{
+    margin-left: -25px;
+    padding-left: 40px;
+    margin-right: 30px;
+    width: 90%;
+}
+.sign p{
+  font-size: 15px;
+  margin-bottom: 0px;
+ font-weight: 400;
+
+}
+.sign span,small{
+   font-style: italic;
+   font-size: 17px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+}
+.return {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.return p{
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.cart{
+    position: relative;
+    margin-right: 6px;
+}
+.cart span{
+    position: relative;
+    font-weight: bold;
+    top: -55px;
+    font-size: 20px;
+    /* background-color: #1a1a1a; */
+    left: 16px;
+    color: orange;
+
+}
+.cart svg{
+    justify-content: center;
+    margin-top: 30px;
+}
+.order_container a:hover, .delivery a:hover, .logo_container a:hover, .logo_container ul li:hover{
+    border: 1px solid white;
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.lower_container{
+    background-color: #232f3e;
+    color: #fff;
+    /* margin-top: -16px; */
+    /* top: -2; */
+   
+}
+.lower_container ul{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.lower_container ul li:not(:first-child){
+    padding: 8px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    cursor: pointer;
+
+}
+.lower_container ul li:first-child{
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px){
+    .header_container{
+        display: flex;
+        flex-direction: column important;
+        height: auto;
+    }
+    .lower_container ul li:not(:first-child){
+        display: none;
+       
+    }
+    .language{
+        display: none;
+    }
+}
+
+/* 18:00 */
