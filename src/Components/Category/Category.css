@@ -35,8 +35,8 @@
 
 
 .product-box{
-    width: 250px;
-    min-height: 250px;
+    width: 210px;
+    min-height: 210px;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
@@ -49,6 +49,8 @@
 }
 .product-box:hover{
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 .title span{
     font-weight: bold;
